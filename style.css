@@ -1,0 +1,315 @@
+
+
+/* Top Nav Bar Styling */
+.topnav {
+    background-color: #0072C6;
+    overflow: hidden;
+    /* display: flex;
+    justify-content: flex-end;  */
+}
+
+.topnav a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    float: right;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #68bdfc;
+    color: white;
+}
+
+#logo {
+    max-height: 5vh;
+    padding-top: 5px;
+    padding-left: 3px;
+}
+
+.topnav a.split {
+    float: left;
+    background-color: #04AA6D;
+    color: white;
+  }
+
+
+/* Hero Image Styling */
+.grid-containerh {
+    padding-top: 15px;
+    display: grid;
+    padding-bottom: 15px;
+    grid-row-gap: 0; 
+}
+
+.grid-itemh {
+    text-align: left;
+    padding-right: 25px;
+    padding-left: 5px;
+    font-size: 30px;
+}
+
+.item1h {
+    grid-column: 1;
+    grid-row: span 4;
+} 
+
+.item2h {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.item3h {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.item4h {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.item5h {
+    grid-column: 2;
+    grid-row: 4;
+}
+
+/* Hide ZaraXD.png by default */
+.heroImage {
+    display: none;
+}
+
+@media only screen and (min-width: 900px) {
+    .heroImage {
+        display: block;
+        max-width: 100%; /* Adjust max-width to limit the image size within the container */
+        height: auto; /* Maintain the aspect ratio of the image */
+    }
+}
+
+
+/* Career Styling */
+.careerContainer {
+    text-align: center; /* Center inline-block elements horizontally */
+}
+
+.careerItem {
+    overflow: hidden;
+    display: inline-block; /* Display elements inline-block */
+    text-align: left;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/* Projects Styling */
+.projects {
+    width: 100%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto; /* Set to two columns */
+    grid-auto-rows: minmax(100px, auto); /* Adjust the height as needed */
+    padding: 10px;
+  }
+  .grid-item {
+    padding: 20px;
+    font-size: 30px;
+  }
+
+/* Additional styling for item1 */
+.grid-item.item1 {
+    grid-column: span 1; /* Forces item1 to span one column */
+}
+
+/* Additional styling for items 2 to 5 */
+.grid-item.item2,
+.grid-item.item3,
+.grid-item.item4,
+.grid-item.item5 {
+    grid-column: span 1; /* Forces these items to span only one column */
+}
+
+
+
+/* .item1 {
+    grid-column: 1 / span 1; 
+    grid-row: span 4;
+} 
+.item2,
+.item3,
+.item4,
+.item5 {
+    grid-column: 2 / span 1; 
+    grid-row: auto; 
+    justify-self: start; 
+} */
+
+/* Do not show any image below 801px */
+@media only screen and (max-width: 900px) {
+    .grid-item.item1 .projectImg,
+    .grid-item.item1 .projectImg2,
+    .grid-item.item1 .video {
+      display: none;
+    }
+  }
+  
+  /* Show ZaraXD.png on small screens (up to 1200px) */
+  @media only screen and (min-width: 901px) and (max-width: 1200px) {
+    .grid-item.item1 .projectImg {
+      display: none;
+    }
+    .grid-item.item1 .projectImg2 {
+      display: block;
+      width: 30vw;
+    }
+    .grid-item.item1 .video {
+        display: block;
+        width: 30vw;
+      }
+  }
+  
+  /* Show Zaraxdog.png on medium and larger screens (1201px and above) */
+  @media only screen and (min-width: 1201px) {
+    .grid-item.item1 .projectImg {
+      display: block;
+      width: 30vw;
+    }
+    .grid-item.item1 .projectImg2 {
+      display: none;
+    }
+    .grid-item.item1 .video {
+        display: block;
+        width: 30vw;
+      }
+
+    
+  }
+
+
+
+/* Skills Styling */
+
+.item1s {
+    grid-column: 1;
+    grid-row: 1;
+} 
+.item2s {
+    grid-column: 2;
+    grid-row: 1;
+}
+  
+.item3s {
+    grid-column: 3;
+    grid-row: 1;
+}
+  
+.item4s {
+    grid-column: 4;
+    grid-row: 1;
+}
+.item5s {
+    grid-column: 5;
+    grid-row: 1;
+}
+
+/* Outside of Coding Styling */
+
+
+/* Contact Styling */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  input[type=submit] {
+    background-color: #0072C6;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+
+
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+
+/* Footer Styling */
+.footer {
+    display: flex;
+    flex-direction: column; /* Display items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text within each item */
+    background-color: #0072C6;
+    overflow: hidden;
+  }
+  
+  .footer p, .footer a {
+    margin: 5px;
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+/* Font Styling*/
+h1 {
+    font-size: 4vh;
+    color: #0072C6;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+p, a, label{
+    font-size: 2vh;
+    color: #424242;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+h3 {
+    font-size: 3vh;
+    color: #424242;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+h4 {
+    font-size: 2vh;
+    color: #424242;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.button {
+    background-color: #0072C6;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none; 
+  }
+
+img {
+    max-width: 35vw;
+    max-height: 40vh;
+  }
+
+.button:hover {
+    background-color: #424242; 
+  }
