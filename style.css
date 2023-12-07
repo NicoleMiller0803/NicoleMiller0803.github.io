@@ -1,9 +1,13 @@
-
+.content{
+  margin-left: 5%;
+  margin-right: 5%;
+}
 
 /* Top Nav Bar Styling */
 .topnav {
     background-color: #0072C6;
     overflow: hidden;
+    max-height: 7.75vh;
     /* display: flex;
     justify-content: flex-end;  */
 }
@@ -13,7 +17,7 @@
     text-align: center;
     padding: 20px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 20px;
     float: right;
 }
 
@@ -29,14 +33,19 @@
 
 #logo {
     max-height: 5vh;
-    padding-top: 5px;
-    padding-left: 3px;
+    padding-top: 10px;
+    padding-left: 9px;
 }
 
 .topnav a.split {
     float: left;
-    background-color: #04AA6D;
+    background-color: #ddd;
     color: white;
+  }
+  
+  .heroImageArea h3, .grid-itemh, h1, p, a{
+    margin: 0px;
+    margin-bottom: 5px;
   }
 
 
@@ -95,9 +104,6 @@
 
 
 /* Career Styling */
-.careerContainer {
-    text-align: center; /* Center inline-block elements horizontally */
-}
 
 .careerItem {
     overflow: hidden;
@@ -106,6 +112,17 @@
     padding-left: 5%;
     padding-right: 5%;
 }
+
+.careerItem p, ul {
+  margin-bottom: 4px;
+  margin-top: 4px;
+  margin-left: 0px;
+}
+
+.compName {
+  margin-top: 15px;
+}
+
 
 /* Projects Styling */
 .projects {
@@ -136,20 +153,6 @@
     grid-column: span 1; /* Forces these items to span only one column */
 }
 
-
-
-/* .item1 {
-    grid-column: 1 / span 1; 
-    grid-row: span 4;
-} 
-.item2,
-.item3,
-.item4,
-.item5 {
-    grid-column: 2 / span 1; 
-    grid-row: auto; 
-    justify-self: start; 
-} */
 
 /* Do not show any image below 801px */
 @media only screen and (max-width: 900px) {
@@ -197,26 +200,31 @@
 /* Skills Styling */
 
 .item1s {
-    grid-column: 1;
-    grid-row: 1;
+  padding-top: 0px;
+  grid-column: 1;
+  grid-row: 1;
 } 
 .item2s {
-    grid-column: 2;
-    grid-row: 1;
+  padding-top: 0px;
+  grid-column: 2;
+  grid-row: 1;
 }
   
 .item3s {
-    grid-column: 3;
-    grid-row: 1;
+  padding-top: 0px;
+  grid-column: 3;
+  grid-row: 1;
 }
   
 .item4s {
-    grid-column: 4;
-    grid-row: 1;
+  padding-top: 0px;
+  grid-column: 4;
+  grid-row: 1;
 }
 .item5s {
-    grid-column: 5;
-    grid-row: 1;
+  padding-top: 0px;
+  grid-column: 5;
+  grid-row: 1;
 }
 
 /* Outside of Coding Styling */
@@ -226,7 +234,7 @@
 input[type=text], select, textarea {
     width: 100%; /* Full width */
     padding: 12px; /* Some padding */ 
-    border: 1px solid #ccc; /* Gray border */
+    border: 1px solid #ddd; /* Gray border */
     border-radius: 4px; /* Rounded borders */
     box-sizing: border-box; /* Make sure that padding and width stays in place */
     margin-top: 6px; /* Add a top margin */
@@ -242,9 +250,6 @@ input[type=text], select, textarea {
     border-radius: 4px;
     cursor: pointer;
   }
-  
-
-
   
   .container {
     border-radius: 5px;
@@ -272,15 +277,31 @@ input[type=text], select, textarea {
 
 /* Font Styling*/
 h1 {
-    font-size: 4vh;
+    font-size: 5vh;
     color: #0072C6;
     font-family:Arial, Helvetica, sans-serif;
+}
+
+.name {
+  font-size: 8vh;
+}
+
+.intro{
+  font-size: 4vh;
+}
+
+.title{
+  margin-top: 25px;
 }
 
 p, a, label{
     font-size: 2vh;
     color: #424242;
     font-family:Arial, Helvetica, sans-serif;
+}
+
+a {
+  white-space: nowrap;
 }
 
 h3 {
