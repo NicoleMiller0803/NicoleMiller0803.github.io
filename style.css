@@ -1,3 +1,9 @@
+body{
+  margin: 0.5%;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+}
+
 .content{
   margin-left: 5%;
   margin-right: 5%;
@@ -5,49 +11,55 @@
 
 /* Top Nav Bar Styling */
 .topnav {
-    background-color: #0072C6;
-    overflow: hidden;
-    max-height: 7.75vh;
-    /* display: flex;
-    justify-content: flex-end;  */
+  background-color: #0072C6;
+  overflow: hidden;
 }
 
 .topnav a {
-    color: #f2f2f2;
-    text-align: center;
-    padding: 20px 16px;
-    text-decoration: none;
-    font-size: 20px;
-    float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px 16px 20px 16px; /* Added padding-bottom */
+  text-decoration: none;
+  font-size: 20px;
+  float: right;
 }
 
 .topnav a:hover {
-    background-color: #ddd;
-    color: black;
+  background-color: #ddd;
+  color: black;
+  padding-bottom: 20px; /* Adjusted padding */
 }
 
 .topnav a.active {
-    background-color: #68bdfc;
-    color: white;
+  background-color: #68bdfc;
+  color: white;
 }
 
 #logo {
-    max-height: 5vh;
-    padding-top: 10px;
-    padding-left: 9px;
+  height: 50px;
+  padding-top: 7px;
+  padding-left: 9px;
 }
 
 .topnav a.split {
-    float: left;
-    background-color: #ddd;
-    color: white;
-  }
-  
-  .heroImageArea h3, .grid-itemh, h1, p, a{
-    margin: 0px;
-    margin-bottom: 5px;
-  }
+  float: left;
+  background-color: #ddd;
+  color: white;
+}
 
+.topnav a {
+  margin-bottom: 0px;
+}
+
+
+.heroImageArea h3, .grid-itemh, h1, p, a {
+  margin: 0px;
+  margin-bottom: 5px;
+}
+
+.heroImageArea{
+  padding-top: 10px;
+}
 
 /* Hero Image Styling */
 .grid-containerh {
@@ -109,8 +121,9 @@
     overflow: hidden;
     display: inline-block; /* Display elements inline-block */
     text-align: left;
-    padding-left: 5%;
+    padding-left: 3%;
     padding-right: 5%;
+    padding-bottom: 10px;
 }
 
 .careerItem p, ul {
@@ -118,6 +131,8 @@
   margin-top: 4px;
   margin-left: 0px;
 }
+
+
 
 .compName {
   margin-top: 15px;
@@ -153,33 +168,17 @@
     grid-column: span 1; /* Forces these items to span only one column */
 }
 
+.projects p {
+  margin-bottom: 3%;
+}
 
-/* Do not show any image below 801px */
-@media only screen and (max-width: 900px) {
-    .grid-item.item1 .projectImg,
-    .grid-item.item1 .projectImg2,
-    .grid-item.item1 .video {
-      display: none;
-    }
-  }
+
+
   
-  /* Show ZaraXD.png on small screens (up to 1200px) */
-  @media only screen and (min-width: 901px) and (max-width: 1200px) {
-    .grid-item.item1 .projectImg {
-      display: none;
-    }
-    .grid-item.item1 .projectImg2 {
-      display: block;
-      width: 30vw;
-    }
-    .grid-item.item1 .video {
-        display: block;
-        width: 30vw;
-      }
-  }
+
   
   /* Show Zaraxdog.png on medium and larger screens (1201px and above) */
-  @media only screen and (min-width: 1201px) {
+  @media only screen and (min-width: 901px) {
     .grid-item.item1 .projectImg {
       display: block;
       width: 30vw;
@@ -191,8 +190,6 @@
         display: block;
         width: 30vw;
       }
-
-    
   }
 
 
@@ -228,7 +225,9 @@
 }
 
 /* Outside of Coding Styling */
-
+.outsideOfCoding p {
+  padding-left: 3%;
+}
 
 /* Contact Styling */
 input[type=text], select, textarea {
@@ -257,6 +256,11 @@ input[type=text], select, textarea {
     padding: 20px;
   }
 
+  .contactContainer{
+    padding-left: 3%;
+    padding-bottom: 3%;
+  }
+
 
 /* Footer Styling */
 .footer {
@@ -277,17 +281,17 @@ input[type=text], select, textarea {
 
 /* Font Styling*/
 h1 {
-    font-size: 5vh;
+    font-size: 3vw;
     color: #0072C6;
     font-family:Arial, Helvetica, sans-serif;
 }
 
 .name {
-  font-size: 8vh;
+  font-size: 5vw;
 }
 
 .intro{
-  font-size: 4vh;
+  font-size: 3vw;
 }
 
 .title{
@@ -295,7 +299,7 @@ h1 {
 }
 
 p, a, label{
-    font-size: 2vh;
+    font-size: 1.25vw;
     color: #424242;
     font-family:Arial, Helvetica, sans-serif;
 }
@@ -305,15 +309,17 @@ a {
 }
 
 h3 {
-    font-size: 3vh;
+    font-size: 2vw;
     color: #424242;
     font-family:Arial, Helvetica, sans-serif;
+    margin-top: 0px;
 }
 
 h4 {
-    font-size: 2vh;
+    font-size: 1.5vw;
     color: #424242;
     font-family:Arial, Helvetica, sans-serif;
+    margin-top: 0px;
 }
 
 .button {
@@ -334,3 +340,63 @@ img {
 .button:hover {
     background-color: #424242; 
   }
+
+
+  /*Mobil View*/
+@media only screen and (max-width: 900px) {
+  .grid-item.item1 .projectImg,
+  .grid-item.item1 .projectImg2,
+  .grid-item.item1 .video {
+    display: none;
+  }
+  /* Font Styling*/
+  h1 {
+    font-size: 6vw;
+    color: #0072C6;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+
+  .name {
+  font-size: 10vw;
+  }
+
+  .intro{
+  font-size: 6vw;
+  }
+
+  .title{
+  margin-top: 25px;
+  }
+
+  p, a, label{
+    font-size: 2.5vw;
+    color: #424242;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+
+  a {
+  white-space: nowrap;
+  }
+
+  h3 {
+    font-size: 4vw;
+    color: #424242;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top: 0px;
+
+  
+  }
+
+  h4 {
+    font-size: 3vw;
+    color: #424242;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top: 0px;
+
+  }
+
+
+
+}
+
+
